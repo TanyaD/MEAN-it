@@ -11,7 +11,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 }
 
 body {
-    line-height: 1
+    line-height: 1;
+}
+
+#bg{
+    background-image: url("/images/7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 ol,ul {
@@ -49,23 +55,14 @@ table {
     zoom:1}
 
 #row-hero p a,.row-hero a:visited {
-    color: #fff;
+    color: #f04;
     text-decoration: none;
-    border-bottom: 1px dotted #fff
+    border-bottom: 1px dotted #f04
 }
 
 #row-hero a:hover {
     color: #f65151;
     transition: all .4s ease
-}
-
-#bg-cover {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100
 }
 
 #logo {
@@ -77,7 +74,10 @@ table {
 .container {
     font-family: Open Sans,sans-serif;
     width: 900px;
-    margin: 0 auto
+    margin: 0 auto;
+}
+.container-footer{
+    margin-top: 40px !important
 }
 
 .portfolio-item {
@@ -257,7 +257,8 @@ h3 a {
 }
 
 .header-container {
-    height: 90px
+    height: 90px;
+    background-image: linear-gradient(to top right, transparent , white);
 }
 
 #social img {
@@ -457,7 +458,7 @@ nav li a:hover {
 
 .service-title,h1 {
     font-weight: 800;
-    color: #fff
+    color: #000000;
 }
 
 h1 {
@@ -479,7 +480,7 @@ h3 a:hover {
 }
 
 p {
-    color: #fff;
+    color: #000000;
     line-height: 26px;
     font-size: 14px;
     padding-top: 25px;
@@ -518,6 +519,10 @@ p {
 
 .pull-right {
     float: right
+/*  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;*/
 }
 
 .pull-left {
@@ -565,9 +570,9 @@ h2 a {
     width: 32%;
     float: left;
     position: relative;
-    -webkit-transform: translateY(-100px);
+/*    -webkit-transform: translateY(-100px);
     transform: translateY(-100px);
-    margin-bottom: -70px
+    margin-bottom: -70px*/
 }
 
 .portfolio-col,.span4,.span8 {
@@ -610,14 +615,17 @@ h2 a {
 .icon-chevron-right {
     height: 17px;
     width: 10px;
-    background: url(../img/chevron-right.png);
     display: inline-block;
     float: right;
-    margin-left: 25px
+    margin-left: 25px;
 }
 
 a.btn:hover {
     color: #fff!important
+}
+
+.btn-submit{
+    color:red;
 }
 
 .btn.btn-freelance {
@@ -625,7 +633,7 @@ a.btn:hover {
 }
 
 .btn.btn-hire {
-    background: hsla(0,0%,100%,.14)
+    background: lightgrey;
 }
 
 #contact {
@@ -780,10 +788,10 @@ textarea {
     animation: a 2.5s
 }
 
-.fadein-fast {
+/*.fadein-fast {
     -webkit-animation: a 2s;
     animation: a 2s
-}
+}*/
 
 @keyframes a {
     0% {
@@ -925,9 +933,10 @@ textarea {
         display: none
     }
 
-    .header-container {
-        height: 140px
-    }
+/*    .header-container {
+        height: 140px;
+
+    }*/
 
     #row-hero {
         padding: 30px 0 100px
@@ -1003,7 +1012,7 @@ textarea {
     }
 
     .icon-chevron-right {
-        margin-left: 8px
+        margin-left: 8px;
     }
 
     .description {
@@ -1100,4 +1109,23 @@ textarea {
 
 .icon-skype:before {
     content: '\e803'
+}
+
+#webdev{
+    font-family: Arial, Helvetica, sans-serif; 
+        font-size: 35px;
+        font-weight:800;
+        color:#303030;
+        margin-left:50px;
+        margin-top:50px;
+}
+
+@media only screen and (min-width: 600px){
+    #webdev{font-family: Arial, Helvetica, sans-serif; 
+        font-size: 55px;
+         font-weight:800;
+          color:#303030;
+          margin-left:100px;
+          margin-top:180px;
+      }
 }
