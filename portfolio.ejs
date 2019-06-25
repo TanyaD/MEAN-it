@@ -5,14 +5,17 @@
     <title></title>
 </head>
 <body>
+    <div id="bg">
     <header class="header-container">
-        <img alt="bg" src = "/images/7.jpg" width="100%" id="bg-cover">
+<!--         <div alt="bg"  id="bg-cover"></div> -->
+<!--         <img alt="bg" src = "/images/7.jpg" width="100%" id="bg-cover"> -->
     <div class="default" id="header">
         <div class="container container-top">
             <div class="brand">
                 <a href="/">
                     <div class="info">
                         <div class="name">TATSIANA DUBINCHYK</div>
+                        <div class="title">FRONT-END WEB DEVELOPER</div>
                     </div>
                 </a>
             </div>
@@ -35,18 +38,53 @@
         </div>
     </div>
 </header>
+    <main>
+        <div id="row-hero">
+            <div class="container">
+                <div class="buffer-top" id="hero">
+                    <h1 class="fadein-fast">Front-end Web Developer.</h1>
+                    <p class="fadein-fast">Enthusiastic, dedicated web developer well rounded in MEAN(MongoDB, Express.js, AngularJS, Node.js), Python(Flask), and Ruby on Rails. Ready to solve complex and unique problems with a tightly knit community of passionate individuals.</br> 
+                    If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <a href="#contact">here</a>.
+                    </p>
+                    <div class="callToAction">
+                        <a href="/download" class="btn btn-freelance">Download Resume<span class="icon-chevron-right"></span></a>
+                        <a href="#form" target="_blank" class="btn btn-hire">I'm looking to hire<span class="icon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 
-
-
-
-
-<!--         <img src = "/images/7.jpg" alt="backround" width="100%">
- -->        <div class="text-block">
-            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 55px; font-weight:800; color:#303030;">Front-end Web Developer.</h1>
+<footer>
+<div class="container container-footer">
+    <div class="center span4">
+        <img alt="profile" src="/images/5.jpg" style="max-width: 130px;border-radius: 50%;border: 2px solid white;">
+        <div class="details">
+            <a href="mailto:info@tanya.me" class="details-small">Contact Me</a>
+        </div>
+        <div id="social">
+            <a href="http://github.com/tanyaD" target="_blank"><span class="icon-github"></span></a> 
+            <a href="#"><span class="icon-skype"></span></a>
+            <a href="http://ca.linkedin.com/in/tatsianad" target="_blank"><span class="icon-linkedin"></span></a>
+            <a href="mailto:info@tanya.me"><span class="icon-email"></span>
+            </a>
         </div>
     </div>
-    
-    
-
+    <div class="span8" id="contact">
+        <form action="" id="contact-form" method="post" name="contact-form">
+            <div class="buffer-bottom">
+                <input type="text" name="name" placeholder="Name" required="" id="field1"> 
+                <input type="email" name="email" placeholder="Email" required=""> <input type="text" name="phone" placeholder="Phone" required="">
+            </div>
+            <div class="buffer-bottom">
+                <textarea class="message" name="message" placeholder="Message" required="" rows="6" spellcheck="false"></textarea>
+            </div><span id="submit-response"></span>
+            <div class="pull-right"><input type="submit" class="button" value="send"></div>
+        </form>
+    </div>
+</div>
+</footer>
 </body>
 </html>
